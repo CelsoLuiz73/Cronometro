@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Chronometer
+        android:id="@+id/cronometro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </Chronometer>
+
+    <Button
+        android:id="@+id/btn_iniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Iniciar"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintEnd_toEndOf="@+id/cronometro"
+        app:layout_constraintStart_toStartOf="@+id/cronometro"
+        app:layout_constraintTop_toBottomOf="@+id/cronometro" />
+
+    <Button
+        android:id="@+id/btn_pausar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Pausa"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintEnd_toEndOf="@+id/btn_iniciar"
+        app:layout_constraintStart_toStartOf="@+id/btn_iniciar"
+        app:layout_constraintTop_toBottomOf="@+id/btn_iniciar" />
+
+    <Button
+        android:id="@+id/btn_zerar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Zerar"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintEnd_toEndOf="@+id/btn_pausar"
+        app:layout_constraintStart_toStartOf="@+id/btn_pausar"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pausar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
